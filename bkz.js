@@ -39,7 +39,7 @@ class IdentificationHtmlModel1
                   set_attribute(type,valeur)
                 {
                     document.getElementById(this.iD).setAttribute(type,valeur); 
-                    // ajoute une valeur a l'element selectionné
+                    // ajoute une valeur a l'element selectionnÃ©
                 }
                 get_attribute(atribute_)
                 {          
@@ -56,4 +56,4 @@ class IdentificationHtml extends IdentificationHtmlModel1 {
 }
 //var ok = new IdentificationHtml("button","Debut","up");
 //ok.set_attribute("class","maClassokp") ; 
-console.log("création de ndenga luvumbu Bokonzi") ; 
+console.log("crÃ©ation de ndenga luvumbu Bokonzi") ;  
