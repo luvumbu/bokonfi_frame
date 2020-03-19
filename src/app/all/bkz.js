@@ -47,6 +47,30 @@ class IdentificationHtml extends IdentificationHtmlModel1 {
     super(setattributE,iD,idParent);  
   }
 }
-//var ok = new IdentificationHtml("button","Debut","up");
-//ok.set_attribute("class","maClassokp") ; 
+function windowscrollY() {
+  console.log(window.scrollY) ; 
+          if(window.scrollY>150)
+          {
+                  var  header = document.getElementById("header") ;
+                  header.style.position = "fixed" ;         
+                  header.style.top = "0" ;
+                  header.style.margin = "0" ;
+                  header.style.width = "100%" ;                
+          }
+          else 
+          {
+                  var  header = document.getElementById("header") ; 
+                  header.style.position = "relative" ;         
+                  header.style.margin = "0" ;
+                  header.style.width = "100%";         
+          }
+   
+  }
+
+/*
+exemple de code : 
+  ok = new IdentificationHtml("p","val");
+  ok.set_text("Mon text") ; 
+  ok.set_attribute("class","maClassokp") ; 
+*/
 console.log("création de ndenga luvumbu Bokonzi") ;

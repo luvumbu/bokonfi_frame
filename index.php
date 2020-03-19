@@ -1,16 +1,43 @@
+<!-- 𝕨𝕨𝕨.𝔹𝕠𝕜𝕠𝕟𝕫𝕚.𝕔𝕠𝕞  𝖞𝖉𝖊𝖓𝖌𝖆 𝕿𝖚𝖛𝖚𝖒𝖇𝖚   ★☆♨♫✈❤
+    //  ★   =   début de l'information
+    //  ☆   =   fin de l'information
+    //  ♨   =   Code de l'information premier letre du fichier et dernier lettre du fichier suivi du numéro du commentaire.
+    //  ♫   = connexion css all suivi du nom du fichier 
+    //  ✈   ♨=#ix   Je suis dans la racine du fichier   ♨=#ix  
+    //  
+    //
+𝕨𝕨𝕨.𝔹𝕠𝕜𝕠𝕟𝕫𝕚.𝕔𝕠𝕞  𝖞𝖉𝖊𝖓𝖌𝖆 𝕿𝖚𝖛𝖚𝖒𝖇𝖚   ★☆♨♫✈❤   -->
 <!DOCTYPE html>
-<html>
-<body>
-<?php 
-$homepage = file_get_contents('http://bokonzi.com/bokonfi_frame/bkz.js');
-echo "<script>" ; 
-echo $homepage ; 
-echo "</script>" ; 
-?> 
+    <html lang="fr">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        </head>
+          <title>Document</title>
+            <body id="body" onscroll="windowscrollY()">
+                <script type="text/javascript">
+                    window.onload = document.getElementById('body').style.display='none';
+                //  ★   n'affiche pas la page pendant le chargement debut ♨=#ix0001
+                </script>
+            <?php 
+                require "app.php" ;
+                //    ★   Ajoute le fichier app.php ♨=#ix0002 ☆    
+            ?>
+        </body>
+        <script type="text/javascript">
+            window.onload = document.getElementById('body').style.display='block';
+            //  affiche la page apres le chargement ♨=#ix0001   ☆
+        </script>
+    </html>
 <script>
-                var el =new IdentificationHtml("ok","test") ;
-                el.set_text("Mon text") ; 
+/*  
+Exemple de code javascript
+  ok = new IdentificationHtml("p","val"); // ajouter une valeur dans le bady 
+  ok.set_text("Mon text") ;  // attribuer un test
+  ok.set_attribute("class","maClassokp") ; // atribuer une classe
+  exemple n°2
+  ok = new IdentificationHtml("p","val","ajoutervaleurdanscetelementexistant"); // ajouter une valeur dans un element donne id existant 
+  /*
 </script>
-</body>
-</html>
-</script>
+<style>
