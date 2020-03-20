@@ -72,5 +72,15 @@ exemple de code :
   ok = new IdentificationHtml("p","val");
   ok.set_text("Mon text") ; 
   ok.set_attribute("class","maClassokp") ; 
+ <div id="header0"></div>
+ <script>
+     var mytext1 ="HOME";    
+     var div_all = document.children[0].children[1].children[6];
+     var div_0= div_all.children[0].id;            
+     mytext1_id = mytext1.toLowerCase();
+     var mytext_1 = new IdentificationHtml("h1",mytext1_id,div_0);
+     mytext_1.set_text(mytext1);
+     document.getElementById(mytext_1.idParent_).className="space-around";  
+ </script>
 */
 console.log("création de ndenga luvumbu Bokonzi") ;
