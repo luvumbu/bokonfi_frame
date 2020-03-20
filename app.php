@@ -7,9 +7,6 @@
     //  ❤   = Le fichier appéle est bien dans la racine du meme appelant 
     //
 𝕨𝕨𝕨.𝔹𝕠𝕜𝕠𝕟𝕫𝕚.𝕔𝕠𝕞  𝖞𝖉𝖊𝖓𝖌𝖆 𝕿𝖚𝖛𝖚𝖒𝖇𝖚   ★☆♨♫✈❤  -->
-<?php
-    require 'links.php' ;//<!--★♫ ♨=ap012 ☆-->
-?>
 <link rel="stylesheet" href="src/app/header/app.header.css">    <!--★♫ ♨=ap001 ☆-->
 <link rel="stylesheet" href="src/app/header/app.header.responsive.css">    <!--★♫ ♨=ap001 ☆-->
 <link rel="stylesheet" href="src/app/section/app.section.css">  <!--★♫ ♨=ap002 ☆-->
@@ -39,3 +36,6 @@
         require 'src/app/footer/app.footer.php' ;//<!--★♫ ♨=ap011 ☆-->
     ?> 
 </footer>
+<?php
+    require 'links.php' ;//<!--★♫ ♨=ap012 ☆-->
+?>

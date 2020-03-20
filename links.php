@@ -7,17 +7,7 @@
     //  ❥ = le fichier ne pas au même emplacement que l'appelant /!\
     //
 𝕨𝕨𝕨.𝔹𝕠𝕜𝕠𝕟𝕫𝕚.𝕔𝕠𝕞  𝖞𝖉𝖊𝖓𝖌𝖆 𝕿𝖚𝖛𝖚𝖒𝖇𝖚   ★☆♨♫✈❤  -->
-<?php 
-        $homepage = file_get_contents('http://bokonzi.com/bokonfi_frame/bkz.js');        
-        echo "<script>" ; 
-        echo $homepage ; 
-        echo "</script>";
-        $homepage = file_get_contents('http://bokonzi.com/bokonfi_frame/bkz.css');
-        echo "<style>" ; 
-        echo $homepage ; 
-        echo "</style>" ;
-        // ajout de lelement javascript et Css qui proviens de la page web
-?> 
+
 <script src="src/app/all/app.all.js"></script><!--  ★♨=ls0001  ☆   -->
 <script src="src/app/header/app.header.js"></script><!--  ★♨=ls0002  ☆   -->
 <script src="src/app/section/app.section.js"></script><!--  ★♨=ls0003  ☆   -->
@@ -29,3 +19,14 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<?php 
+        $homepage = file_get_contents('http://bokonzi.com/bokonfi_frame/bkz.js');        
+        echo "<script>" ; 
+        echo $homepage ; 
+        echo "</script>";
+        $homepage = file_get_contents('http://bokonzi.com/bokonfi_frame/bkz.css');
+        echo "<style>" ; 
+        echo $homepage ; 
+        echo "</style>" ;
+        // ajout de lelement javascript et Css qui proviens de la page web
+?> 
