@@ -37,6 +37,14 @@ a:hover
     font-family: "Pokemon Hollow";
     src: url("font/Pokemon Hollow.ttf");
   }
+  .display-flex 
+  {
+      display: flex;
+  }
+  .display-block
+  {
+    display: block;
+  }
   .CaviarDreams
   {
         font-family: "CaviarDreams";
@@ -403,6 +411,22 @@ a:hover
     .height-image-500px 
     {
         height:500px;
+    }
+    .height-image-550px 
+    {
+        height:550px;
+    }
+    .height-image-600px 
+    {
+        height:600px;
+    }
+    .height-image-700px 
+    {
+        height:700px;
+    }
+    .height-image-800px 
+    {
+        height:800px;
     }
     .height-10pc
     {
