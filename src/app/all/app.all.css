@@ -68,6 +68,18 @@ a:hover
         display: flex;
         justify-content: space-around;
     }
+    .space-between  
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    .space-between-margin-x-15px  
+    {
+        display: flex;
+        justify-content: space-between;
+        margin-left:15px;
+        margin-right:15px;
+    }
     .margin-x-5px 
     {
         margin-left:5px ; 
@@ -482,5 +494,10 @@ a:hover
             {
                 display: block;   
                 text-align: center;              
+            }
+            .space-between-margin-x-15px  
+            {
+                display: block;
+                text-align: center;
             }
     }
