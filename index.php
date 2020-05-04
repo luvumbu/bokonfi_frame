@@ -7,6 +7,7 @@
     //  
     //
 𝕨𝕨𝕨.𝔹𝕠𝕜𝕠𝕟𝕫𝕚.𝕔𝕠𝕞  𝖞𝖉𝖊𝖓𝖌𝖆 𝕿𝖚𝖛𝖚𝖒𝖇𝖚   ★☆♨♫✈❤   -->
+
 <!DOCTYPE html>
     <html lang="fr">
             <head>
@@ -16,7 +17,7 @@
                 <meta http-equiv="X-UA-Compatible" content="ie=edge">
         </head>
           <title>Document</title>
-            <body id="body" onscroll="windowscrollY()">
+            <body id="body">
                 <script type="text/javascript">
                     window.onload = document.getElementById('body').style.display='none';
                 //  ★   n'affiche pas la page pendant le chargement debut ♨=#ix0001
@@ -31,4 +32,6 @@
             //  affiche la page apres le chargement ♨=#ix0001   ☆
         </script>
     </html>
-<style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">

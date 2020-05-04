@@ -6,12 +6,233 @@
     //  ✈  = provenence du fichier total /!\... app.php ... /!\ racine du fichier ♨=ap009
     //  ❥ = le fichier ne pas au même emplacement que l'appelant /!\
     //
-    𝕨𝕨𝕨.𝔹𝕠𝕜𝕠𝕟𝕫𝕚.𝕔𝕠𝕞  𝖞𝖉𝖊𝖓𝖌𝖆 𝕿𝖚𝖛𝖚𝖒𝖇𝖚   ★☆♨♫✈❤  -->
-    <div id="section0"></div>
-    <div id="section1"></div>
-    <div id="section2"></div>
-    <div id="section3"></div>
-    <div id="section4"></div>
-    <div id="section5"></div>
+    𝕨𝕨𝕨.𝔹𝕠𝕜𝕠𝕟𝕫𝕚.𝕔𝕠𝕞  𝖞𝖉𝖊𝖓𝖌𝖆 𝕿𝖚𝖛𝖚𝖒𝖇𝖚   ★☆♨♫✈❤  
+-->
 
-    
+<div id="info" class="none">Valeur envoyé avec succes <i class="material-icons">done_all</i></div>
+<div id="section0"></div>
+
+ 
+
+<script>
+ 
+    function action(this_) 
+    {
+   
+      var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("section0").innerHTML =
+      this.responseText;
+    }
+  };
+  if(this_.className=="add-inter")
+  {
+    xhttp.open("GET", "src/app/function/function.add-inter.php", true);
+  }
+  else 
+  {
+    xhttp.open("GET", "src/app/function/function.my-inter.php", true);
+  }
+  
+  xhttp.send();
+}
+var intervention_x = 0 ; 
+var intervention_x_2 =0 ; 
+
+
+function intervention(this_) 
+{
+    if(intervention_x!=3 ) // vous avez selectionne 3 valeurs
+    {       
+                
+        var valeurId= document.getElementById(this_.value); 
+ 
+         document.getElementById(this_.value+"_").className="on" ;
+     
+         intervention_x ++  ; 
+   
+    }
+}
+
+function remove(this_)
+{
+  
+
+         document.getElementById(this_.id+"_").className="none" ;
+         intervention_x --  ; 
+ 
+
+}
+function send_inter() 
+{
+ 
+  var SAV_VALUE = document.getElementById("SAV_").className;
+  var AERIEN_VALUE = document.getElementById("AERIEN_").className;
+  var FACADE_VALUE = document.getElementById("FACADE_").className;
+  var SOUS_TERRAIN_VALUE = document.getElementById("SOUS_TERRAIN_").className;
+  var IMMEUBLE_VALUE = document.getElementById("IMMEUBLE_").className;
+  var PLP_VALUE = document.getElementById("PLP_").className;
+  var FACADE_VALUE = document.getElementById("FACADE_").className;
+  var COMPLEXE_VALUE = document.getElementById("COMPLEXE_").className;
+  var SAV_INSTALL_VALUE = document.getElementById("SAV_INSTALL_").className;
+  var BINOME_VALUE = document.getElementById("BINOME").value;
+  var BINOME_VALUE_class = document.getElementById("BINOME").className;
+  var ND_VALUE = document.getElementById("ND").value;
+  var DATE_VALUE = document.getElementById("date").value ; 
+
+ 
+ 
+  var identite = new FormData();
+// Ajout d'information dans l'objet
+// SAV_VALUE
+// AERIEN_VALUE
+// FACADE_VALUE
+// SOUS_TERRAIN_VALUE
+// IMMEUBLE_VALUE
+// PLP_VALUE
+// FACADE_VALUE
+// COMPLEXE_VALUE
+// SAV_INSTALL_VALUE
+// BINOME_VALUE
+// ND_VALUE
+// DATE_VALUE
+ 
+ 
+
+
+
+ if(ND_VALUE!="")
+ {
+  
+
+
+ 
+// Création d'un objet FormData
+var identite = new FormData();
+// Ajout d'information dans l'objet
+identite.append("SAV_VALUE", SAV_VALUE);
+identite.append("AERIEN_VALUE", AERIEN_VALUE);
+identite.append("FACADE_VALUE", FACADE_VALUE);
+identite.append("SOUS_TERRAIN_VALUE", SOUS_TERRAIN_VALUE);
+identite.append("IMMEUBLE_VALUE", IMMEUBLE_VALUE);
+identite.append("PLP_VALUE", PLP_VALUE);
+identite.append("FACADE_VALUE", FACADE_VALUE);
+identite.append("COMPLEXE_VALUE", COMPLEXE_VALUE);
+identite.append("SAV_INSTALL_VALUE", SAV_INSTALL_VALUE);
+identite.append("BINOME_VALUE", BINOME_VALUE);
+identite.append("ND_VALUE", ND_VALUE);
+identite.append("DATE_VALUE",DATE_VALUE);
+// Création et configuration d'une requête HTTP POST vers le fichier post_form.php
+var req = new XMLHttpRequest();
+req.open("POST", "src/app/function/function.send-inter.php");
+// Envoi de la requête en y incluant l'objet
+req.send(identite);
+console.log(req);
+
+document.getElementById("info").className="info" ; 
+document.getElementById("section0").style.opacity="0" ; 
+
+setTimeout(function(){ 
+  document.getElementById("section0").style.opacity="1" ; 
+  document.getElementById("info").className="none" ; 
+  
+  document.location.reload(true);
+}, 500);
+
+ }
+
+  // alert("SAV_VALUE  "+SAV_VALUE) ;
+  // alert("AERIEN_VALUE  "+AERIEN_VALUE) ;
+  // alert("FACADE_VALUE  "+FACADE_VALUE) ;
+  // alert("SOUS_TERRAIN_VALUE  "+SOUS_TERRAIN_VALUE) ;
+  // alert("IMMEUBLE_VALUE  "+IMMEUBLE_VALUE) ;
+  // alert("PLP_VALUE  "+PLP_VALUE) ;
+  // alert("FACADE_VALUE  "+FACADE_VALUE) ;
+  // alert("COMPLEXE_VALUE  "+COMPLEXE_VALUE) ;
+  // alert("SAV_INSTALL_VALUE  "+SAV_INSTALL_VALUE) ;
+  // alert("BINOME_VALUE  "+BINOME_VALUE) ;
+
+}
+
+function reloads()
+{
+  // debut du code 
+
+
+var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("section0").innerHTML =
+      this.responseText;
+    }
+  }; 
+
+    setTimeout(function(){ 
+      
+      
+      xhttp.open("GET", "src/app/function/function.my-inter.php", true);
+    xhttp.send();
+      
+      
+      
+      
+      }, 200);
+// fin du code
+}
+
+
+function removTab(this_) 
+{
+
+var identite = new FormData();
+// Ajout d'information dans l'objet
+
+identite.append("id",this_.id);
+// Création et configuration d'une requête HTTP POST vers le fichier post_form.php
+var req = new XMLHttpRequest();
+req.open("POST", "src/app/function/function.delet-inter.php");
+// Envoi de la requête en y incluant l'objet
+req.send(identite);
+console.log(req);
+
+reloads() ;
+}
+</script>
+
+<style>
+  .info
+  {
+    width: 50% ; 
+    text-align: center;
+    margin : auto ; 
+   background-color: #bff4c2;
+    margin-top  : 25px; 
+    text-shadow: 1px 1px 1px black ; 
+    position: relative;
+    color:white ;
+    padding: 15px;
+  }
+  .material-icons 
+  {
+    color : greenyellow; 
+  text-shadow: 1px 1px 1px black;
+  padding: 15px;
+  text-shadow: 1px 1px 1px black; 
+  position: absolute;
+  top : -20px ; 
+  
+  }
+    .none 
+    {
+        display: none;
+    }
+    .fa-remove 
+    {
+       
+    }
+    .margin-left
+    {
+       margin-left : 40px; 
+    }
+</style>

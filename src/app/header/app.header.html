@@ -7,3 +7,40 @@
     //  ❥ = le fichier ne pas au même emplacement que l'appelant /!\
     //
     𝕨𝕨𝕨.𝔹𝕠𝕜𝕠𝕟𝕫𝕚.𝕔𝕠𝕞  𝖞𝖉𝖊𝖓𝖌𝖆 𝕿𝖚𝖛𝖚𝖒𝖇𝖚   ★☆♨♫✈❤  -->
+    <div id="header0" class="flex"></div>
+    <script>
+  header1 = new IdentificationHtml("div","val1","header0"); // ajouter une valeur dans le bady 
+  header1.set_text("Ajouter une intervetion") ;  // attribuer un test
+  header1.set_attribute("onclick","action(this)") ; 
+  header1.set_attribute("class","add-inter") ; 
+  
+  header2 = new IdentificationHtml("div","val2","header0"); // ajouter une valeur dans le bady 
+  header2.set_text("Mes interventions") ;  // attribuer un test
+  header2.set_attribute("onclick","action(this)") ; 
+  header2.set_attribute("class","my-inter") ; 
+</script>
+
+<style>
+    .flex 
+    {
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 3px solid   #245b6d ;  
+        margin : 0 ; 
+        padding: 0 ; ;
+    }
+    #val1 ,#val2 
+    {
+        padding: 15px; 
+        transition : 1s all ; 
+        
+    }
+    #val1:hover ,#val2:hover 
+    {
+        cursor:pointer ; 
+        background-color: #245b6d;
+        transition : 1s all ;  
+        color:white ; 
+        
+    }
+</style>
